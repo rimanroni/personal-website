@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/flowbite.min.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+ </head>
+<body>
+  <!--  navbar desing start -->
+  
+<nav class="px-2  bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="#" class="flex items-center">
+          <img src="img/navlogo.jpg" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white underline" >  RIMAN RONI  </span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="indext.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">About Me <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bolog-1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bolog-2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bolog-3</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="join.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My Skills</a>
+                  </div>
+              </div>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <hr>
+   <!--  navbar desing end-->
+   <!--  hero part start -->
+   <section class="text-gray-600 body-font  shadow   h-auto" id="banner">
+    <div class="container mx-auto flex px-5 py-24  md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4   text-purple-600 font-bold">Hi I am Riman Roni
+          <br class="hidden lg:inline-block">Web Desing & Javascript Devloper
+        </h1>
+        <p class="mb-8 leading-relaxed font-bold text-emerald-500">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries</p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="singup.html">Sing Up</a> </button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-700 rounded text-lg hover:text-white" >Log in</button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
+        <img class="object-cover object-center rounded" alt="" src=""  >
+      </div>
+    </div>
+  </section> <hr>
+
+ 
+   <!--  hero part end -->
+   <!-- second part here -->
+   <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+      <div class="lg:w-4/6 mx-auto">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="img/slider-1538934481.png">
+        </div>
+        <div class="flex flex-col sm:flex-row mt-10">
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+            <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+              <img src="img/logo.jpeg" class="rounded-full w-full h-full"  alt="">
+            </div>
+            <div class="flex flex-col items-center text-center justify-center">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Riman Roni</h2>
+              <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+              <p class="text-base"><span class="font-bold">Student Computer 4th </span><br> <span class="font-bold">full name: Riman Roni</span><br>
+                <span class="font-bold">Roll: 501334 </span> <br> <span class="font-semibold"> Phone : 01774008461</span>
+              </p>
+            </div>
+          </div>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+            <p class="leading-relaxed text-lg mb-4">A computer engineer fuses electrical engineering and computer science to develop new technology. Computer engineers design, build, and maintain hardware in modern computers.
+
+              These engineers focus on integrating hardware and software in a unified system safely and efficiently. According to CompTIA, computer engineers, cybersecurity professionals, and systems analysts make up the second-largest category of tech jobs.
+              
+              Along with personal devices, computer engineers have a hand in creating robotics, networks, and other computer-based systems.</p>
+            <a class="text-indigo-500 inline-flex items-center cursor-pointer">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <hr>
+   <!-- second part here -->
+  <!--  other cards here  -->
+ <div class=" bg-slate-200 py-6 sm:py-8 lg:py-12">
+  <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+    <!-- text - start -->
+    <div class="mb-10 md:mb-16">
+      <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Gallery</h2>
+
+      <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Life is beautiful. Also it has problems, that should be faced by human with courage. Happiness, grief are the two sides of the coin. Life is full of moments of joy, success. We have created an amazing list of Life Status that describes life in beautiful way. </p>
+    </div>
+    <!-- text - end -->
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 xl:gap-8">
+      <!-- image - start -->
+      <a href="#" class="group h-48 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+        <img src="img/1.PNG" class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" />
+        </a>
+      <!-- image - end -->
+
+      <!-- image - start -->
+      <a href="#" class="group h-48 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+        <img src="img/2.PNG" loading="lazy" alt="Photo by Lorenzo Herrera" class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"/>
+        </a>
+      <!-- image - end -->
+
+      <!-- image - start -->
+      <a href="#" class="group h-48 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+        <img src="img/IMG-20221021-WA0006.jpg" loading="lazy" alt="Photo by Magicle" class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" />
+         
+      </a>
+      <!-- image - end -->
+    </div>
+  </div>
+</div> <hr>
+<!--  other js file here -->
+  <!--  personal skills -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 uppercase">Student</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3"> I'am Very Bad Student </h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <a class="text-indigo-500 inline-flex items-center cursor-pointer">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+           </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 uppercase">all time busy</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">JavaScript Programming</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <a class="text-indigo-500 inline-flex items-center cursor-pointer">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+           </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 uppercase">my future plan</h2>
+            <h1 class="title-font sm:text-2xl capitalize text-xl font-medium text-gray-900 mb-3">full stack developer</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <a class="text-indigo-500 inline-flex items-center cursor-pointer">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section> <hr>
+  <!--  personal skills -->
+  <!-- other pronsosa  -->
+  <div class="bg-slate-300 py-6 sm:py-8 lg:py-12">
+    <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
+      <h2 class="text-black text-2xl lg:text-3xl font-bold te text-center mb-8 md:mb-12 capitalize">What others say about me</h2>
+  
+      <div class="grid md:grid-cols-2 gap-4 md:gap-8">
+        <!-- quote - start -->
+        <div class="flex flex-col items-center bg-white shadow text-black rounded-lg gap-4 md:gap-6 px-8 py-6">
+          <div class="max-w-md text-black lg:text-lg text-center">“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque maxime in numquam cupiditate, itaque amet laboriosam aperiam aliquid ad similique..”</div>
+  
+          <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
+            <div class="w-12 md:w-14 h-12 md:h-14 bg-gray-100 border-2 border-indigo-100 rounded-full overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112" loading="lazy" alt="Photo by Radu Florin" class="w-full h-full object-cover object-center" />
+            </div>
+  
+            <div>
+              <div class="text-black text-sm md:text-base font-bold text-center sm:text-left">John McCulling</div>
+              <p class="text-black text-sm md:text-sm font-semibold text-center sm:text-left">CEO / Datadrift</p>
+            </div>
+          </div>
+        </div>
+        <!-- quote - end -->
+  
+        <!-- quote - start -->
+        <div class="flex flex-col items-center bg-white shadow rounded-lg gap-4 md:gap-6 px-8 py-6">
+          <div class="max-w-md text-black lg:text-lg text-center">“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dicta voluptate quos placeat. Ipsam adipisci architecto quis iusto quidem id.”</div>
+  
+          <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
+            <div class="w-12 md:w-14 h-12 md:h-14 bg-gray-100 border-2 border-indigo-100 rounded-full overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112" loading="lazy" alt="Photo by christian ferrer" class="w-full h-full object-cover object-center" />
+            </div>
+  
+            <div>
+              <div class="text-black text-sm md:text-base font-bold text-center sm:text-left">Kate Berg</div>
+              <p class="text-black font-semibold text-sm md:text-sm text-center sm:text-left">CFO / Dashdash</p>
+            </div>
+          </div>
+        </div>
+        <!-- quote - end -->
+      </div>
+    </div>
+  </div>
+  <!-- other pronsosa  -->
+
+<!--  fotter part -->
+  <div class="  w-full h-6">
+    <div class="bg-black p-4 items-center">
+      <div class="flex justify-center pt-10 pb-14 md:pb-9"> <img class="w-2/5 md:w-[25%] lg:w-[18%] xl:w-[15%]"
+              src="images/cucet-footer-logo.png" alt="" srcset="" /> </div>
+      <div class="space-y-9 grid grid-cols-1 md:grid-cols-2 md:pl-24 md:pr-16 lg:grid-cols-4 lg:px-7 xl:px-14 xl:ml-16">
+          <div class="text-[#6d6d6d] font-[650] text-[16px] leading-7">
+              <div class="flex justify-start md:mt-10">
+                  <h1
+                      class="text-white pb-[36px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
+                      Inform </h1> <span class="text-white font-sans uppercase font-normal tracking-wider">ation</span>
+              </div>
+              <p>Web desing</p>
+              <p>JavaScript Learning</p>
+           </div>
+          <div class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide md:">
+              <div>
+                  <pre
+                      class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90"> dates &nbsp;</pre>
+              </div>
+              <p>Web Desing start - 20/2/22</p>
+              <p>JavaScript Start - 5/11/22</p>
+           </div>
+          <div class="md:flex flex-col justify-between">
+              <div class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide">
+                  <div class="flex justify-start">
+                      <h1
+                          class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
+                          About </h1> <span class="text-white font-sans uppercase font-normal tracking-wider">exam</span>
+                  </div>
+                  <p class=""> <a class="hover:text-[#cacaca]" href="#">Apply</a> </p>
+                  <p class=""> <a class="hover:text-[#cacaca]" href="#">Eligibility</a> </p>
+               </div>
+              <div
+                  class="text-[#747474] text-[15px] font-[550] leading-6 tracking-wide mt-9 md:order-5 md:pt-32 lg:pb-4">
+                </div>
+          </div>
+          <div class="text-[#797878] text-[15px] font-[550] leading-6 tracking-wide md:order-4 lg:">
+              <div class="flex justify-start">
+                  <h1
+                      class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
+                      get in t </h1> <span class="text-white font-sans uppercase font-normal tracking-wider">ouch</span>
+              </div>
+              <p class="space-x-3"> <i class="fa fa-home text-[17px]"></i><strong
+                      class="text-[#8b8b8b] text-[15px] tracking-wide">My Location</strong> </p>
+              <div class="leading-7">
+                  <p class="">2FM4+3XJ, ঠাকুরগাঁও <br /> Ranpur, Thakurgaon (Bangladesh) <br /> 
+                      No:+88 01326552304 <br> No: +88 01774008461 </p>
+              </div>
+              
+          </div>
+      </div>
+      <div class="divide-y divide-[#747474] contrast-200 mt-3 mb-3 md:-mt-4 md:-mb-2 lg:-mt-16 xl:-mt-24">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+      </div>
+      <div class="flex justify-center mb-4 md:mb-1 text-[#afafaf] text-center text-xl space-x-3">
+          <p> <a href="https://www.facebook.com/profile.php?id=100087113299482"
+                  class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[7px]">
+                  <i class="fa-brands fa-facebook"></i></a> </p>
+          <p> <a href="https://twitter.com/rr_riman"
+                  class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                      class="fa-brands fa-twitter"></i></a> </p>
+          <p> <a href="https://www.instagram.com/rimanroni387/"
+                  class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                      class="fa-brands fa-instagram"></i></a> </p>
+          <p> <a href="https://www.linkedin.com/in/rony-riman-rr-445b00236/"
+                  class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                      class="fa-brands fa-linkedin"></i></a> </p>
+          <p> <a href="https://www.youtube.com/@message5379"
+                  class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                      class="fa-brands fa-youtube"></i></a> </p>
+          <p> <a href="https://www.pinterest.com/settings#profile"
+                  class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                      class="fa-brands fa-pinterest"></i></a> </p>
+          <p> <a href="#"
+                  class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
+                      class="fa-brands fa-telegram"></i></a> </p>
+      </div>
+      </div>
+
+  </div>
+ <!-- fotter part -->
+  <script src="js/flowbite.js"></script>
+ </body>
+</html>
